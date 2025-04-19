@@ -24,7 +24,7 @@ const AllProjects =[
     }, 
     {
         name: 'GraphicDesign',
-        image: 'images/graphicdesign.jpg',
+        image: 'images/Graphicdesign.jpg',
         phragraph: 'A creative graphic design project'
         
     },
