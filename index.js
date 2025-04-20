@@ -51,6 +51,35 @@ AllProjects.map((project)=>{
 
 
 
+// const mode = document.getElementById('mode');
+// mode.addEventListener('click',()=>{
+//     mode.classList.toggle('active');
+//     if (mode.classList.contains('active')) {
+//         document.body.style.backgroundColor = 'white';
+//         document.body.style.color = 'black';
+//     } else {
+//         document.body.style.backgroundColor = 'white';
+//         document.body.style.color = 'black';
+//     }
+// });
+const mode = document.getElementById('mode');
+mode.addEventListener('click',()=>{
+    mode.classList.toggle('active');
+    
+    if(mode.classList.contains('active')){
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        document.body.style.transition = 'background-color 0.5s, color 0.5s';
+    }
+    else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        
+
+    }
+})
+
+
 
 
 

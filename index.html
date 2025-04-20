@@ -11,9 +11,11 @@
 
 
     <main>
-        <nav class="bg-gray-800 p-4 text-white flex lg:justify-center lg:space-x-[600px] justify-between">
+        <nav class="bg-gray-800 fixed -right-1 -left-1 p-4 opacity-70 backdrop-blur  text-white flex lg:justify-center lg:space-x-[600px] justify-between">
             <h1 class="text-4xl font-mono">samo</h1>
+
             <div class="flex  space-x-5">
+                <button><ion-icon name="contrast-outline" id="mode"  class="text-2xl hover:text-[#03A9F5]"></ion-icon></button>
             <ul class="hidden lg:flex space-x-4" id="menuList">
                 <li><a href="# " class="font-mono ml-4">Home</a></li>
                 <li><a href="# " class="font-mono">About</a></li>
@@ -28,10 +30,10 @@
             
         <ion-icon name="menu-outline" id="MenuIcon" class="sm:hidden text-4xl"></ion-icon>
         </nav>
-        <div class="bg-gray-900 lg:h-screen h-[800px] overflow-hidden">
-            <main class="md:flex sm:flex-row ">
+        <div class="bg-gray-800 lg:h-screen h-[800px] overflow-hidden ">
+            <main class="md:flex sm:flex-row mt-8 ">
         <div class="text-center pt-28 lg:pt-36 text-white ml-4">
-            <h1 class="text-4xl font-bold pb-4">I'am Sadak Hassan -- <span class="text-4xl text-[#03A9F5]">Fullstack Dev </span>--</h1>
+            <h1 class="Anim text-4xl font-bold pb-4">I'am Sadak Hassan -- <span class="Anim text-4xl text-[#03A9F5]">Fullstack Dev </span>--</h1>
             <p class="text-[17px] text-gray-400">A passionate creative graphic designer , fullstack-developer<br>
             I am also webdesigner for designing beautyfull ui design... 
             </p>
@@ -47,13 +49,88 @@
     <div id="GridSection" class="grid grid-cols-1 lg:grid-cols-3">
     
     </div>
+    <h1 class="text-center font-mono text-3xl mt-6 mb-4"> About me</h1>
+    
+    <main class="flex-row lg:flex rounded-2xl bg-slate-500 px-4 pt-6 text-white justify-between lg:mx-36 lg:space-x-7 sm:ml-7 ">
+    <div class="ml-6 w-[400px] h-[600px]">
+        
+        <p class=" w-43">I’m a creative graphic and web designer with a strong eye for detail and aesthetics.<br>
+            Also skilled as a full-stack developer, I build responsive, user-friendly websites and apps<br>
+            I blend design and code to create seamless digital experiences that connect with users.<br>
+            Passionate about turning ideas into visual stories that are both functional and beautiful.<br>
+            
+            </p>
+        <button class="px-2 py-1 rounded border border-[#0bb2ff] hover:bg-[#0bb2ff] hover:text-white mt-3">Contact Me</button>
+    </div>
+    <div class=" ml-8 pt-8"><img src="images/sme.png" alt=""></div>
+</main>
+
+<h1 class="text-center font-bold text-2xl py-7">Contact me</h1>
+<div class="flex mx-3 mb-14 space-x-8 justify-center">
+    <img src="images/contact.jpg" class="w-[300px] h-[300px]">
+    <div id="contact">
+        <form id="emailForm">
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-black ">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required />
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-black ">Fariin</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#0bb2ff] text-white py-2 px-4 rounded-lg hover:bg-blue-600">Dir Fariinta</button>
+        </form>
+
+    </div>
+</div>
 
 
 
 
 
+<footer style="background:#1a1a1a; color:#f0f0f0; padding: 30px 20px; text-align: center; font-family: sans-serif;">
+    <h2 style="margin-bottom: 10px;">Sadak Sadaqsamo</h2>
+    <p style="margin: 5px 0;">📞 +252 613170796</p>
+    <p style="margin: 5px 0;">
+      ✉️ <a href="mailto:sadaqsamor99@gmail.com" style="color:#f0f0f0; text-decoration: none;">sadaqsamor99@gmail.com</a>
+    </p>
+    <div style="margin-top: 15px;">
+      <a href="https://facebook.com/sadaksamo" target="_blank" style="color:#f0f0f0; margin: 0 10px; font-size: 20px;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/sadaksamo" target="_blank" style="color:#f0f0f0; margin: 0 10px; font-size: 20px;">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </footer>
+  
 
+</footer>
 
+<style>
+    .Anim {
+      font-size: 28px;
+      font-weight: 400px; /* Corrected to remove 'px' */
+      color: #00aeff;
+      font-family: 'Courier New', monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 4px solid #009dff;
+      width: 40;
+      animation: typing 5s steps(40, end) forwards, blink 0.8s infinite;
+      margin-bottom: 10px;
+    }
+    
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 630px; } /* Adjust based on text length */
+    }
+    
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #0073ff; }
+    }
+    </style>
     <script src="index.js"></script>
     
 </body>
